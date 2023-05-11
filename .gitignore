@@ -1,2 +1,8 @@
-recommend/__pycache__/
-venv/
+# Ignore virtual environment
+recommend-env/
+
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
