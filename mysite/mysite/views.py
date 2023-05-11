@@ -17,7 +17,7 @@ def nextThree(request):
     book = data.decode('utf-8')
     bookDict = json.loads(book)
     print(bookDict)
-    books = recommend(bookDict)
+    books = recommend(bookDict['isbn'])
     print(books)
     return books
 
