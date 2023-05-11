@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from .views import init, coldStart, nextThree
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('init/', init, name='init'),
+    path('coldStart/', coldStart, name='coldStart'),
+    path('nextThree/', nextThree, name='nextThree'),
 ]
