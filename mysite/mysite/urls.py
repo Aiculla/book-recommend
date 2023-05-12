@@ -24,3 +24,8 @@ urlpatterns = [
     path('coldStart/', coldStart, name='coldStart'),
     path('nextThree/', nextThree, name='nextThree'),
 ]
+
+
+# Create Documentation 
+# Write Tests
+# Type Hints 

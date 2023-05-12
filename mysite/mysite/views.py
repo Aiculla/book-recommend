@@ -1,13 +1,15 @@
-from .training import initial, recommend, get_random_books
+from .training import BookRecommender
 from django.views.decorators.csrf import csrf_exempt
 import json
 
+
+obj = BookRecommender()
 # Either loads model or trains model
 def init(request):
-    return initial()
+    return obj.initial()
 
 def coldStart(request):
-    books = get_random_books()
+    books = obj.get_random_books()
     print(books)
     return books
 
@@ -16,9 +18,7 @@ def nextThree(request):
     data = request.body
     book = data.decode('utf-8')
     bookDict = json.loads(book)
-    print(bookDict)
-    books = recommend(bookDict['isbn'])
-    print(books)
+    books = obj.recommend(bookDict['isbn'])
     return books
 
 
