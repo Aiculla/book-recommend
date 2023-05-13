@@ -1,4 +1,4 @@
-from .training import BookRecommender
+from ml_model_training.recommender import BookRecommender
 from django.views.decorators.csrf import csrf_exempt
 import json
 
