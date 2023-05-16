@@ -1,34 +1,44 @@
 <template>
   <div>
-    <template v-if="currentBookSet && currentBookSet.books">
+    <template v-if="isloading">
+      <LoadingScreen />
+    </template>
+    <template v-else>
       <div class="book-list">
+        <p> Book Set #{{ setNumber }}</p>
       <BookCard
         :books="currentBookSet.books.Message"
         :currentBookSet="currentBookSet"
         @book-clicked="handleBookClick"
         class="book-card"
       />
+      <NavigationButtons @indexChanged ="changeLinkedListIndex"/>
     </div>
     </template>
   </div>
 </template>
 
-
 <script>
 import BookCard from './components/BookCard.vue';
+import LoadingScreen from "./components/loadingScreen.vue"
+import NavigationButtons from "./components/navigationButtons.vue"
 import {DoublyLinkedList} from './doublyLinkedCircularList'
-import { coldStart, nextThree} from './api';
+import { coldStart, nextThree,initial} from './api';
 
 // Call init and then do coldStart, 
 export default {
   components: {
     BookCard,
+    LoadingScreen,
+    NavigationButtons,
   },
   data() {
     return {
       linkedList: new DoublyLinkedList(),
       clickedBookISBN: '',
       currentBookSet: '',
+      isloading: true,
+      setNumber: 1,
     };
   },
   methods: {
@@ -36,28 +46,35 @@ export default {
       // Send a request to nextThree, add it to the linked list, and set currentBookSet to the next node, change values for currentBookSet and selectedBook
       nextThree({isbn: isbn}).then((response => {
         console.log(response)
+        // Adding to the linked list 
         this.currentBookSet.currBookSet = false
         this.currentBookSet.selectedBook = isbn
         this.linkedList.insert(response,true,0)
         this.currentBookSet = this.currentBookSet.next
-        console.log(this.currentBookSet)
+        this.setNumber = this.setNumber + 1
+        return
       }))
     },
+    changeLinkedListIndex(newIndex) {
+      if(newIndex > 0)  {
+        this.currentBookSet = this.currentBookSet.prev
+      }
+      else  {
+        this.currentBookSet = this.currentBookSet.next
+      }
+    },
     loadData()  {
-  //     initial().then((result) => {
-  //     console.log(result)
-  //     coldStart().then((response) => {
-  //       console.log(response)
-  //       this.linkedList.insert(response,true,0)
-  //       this.currentBookSet = this.linkedList.head
-  //     })
-  // })
-  coldStart().then((response) => {
-        console.log(response)
-        this.linkedList.insert(response,true,0)
-        this.currentBookSet = this.linkedList.head
-      })
-    }
+       initial().then((result) => {
+       console.log(result)
+       coldStart().then((response) => {
+         console.log(response)
+         this.linkedList.insert(response,true,0)
+         this.currentBookSet = this.linkedList.head
+         this.isloading = false
+         
+       })
+   })
+    },
   },
   mounted() {
     this.loadData()
@@ -69,9 +86,9 @@ export default {
 
 
 // What I'm looking at 
-// Isloading reactive varaible for showing the loading screen and the other components
-// Component for the forward and backward buttons
-//Forward and Backward buttons changes the node being sent to the card component
-// Selected card gets highlighted and is no longer able to 
+
+// Selected card gets highlighted
+// Change the styling for buttons, loading screen, book cards, 
+// Message Flashing 
 
 </script>
