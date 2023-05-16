@@ -15,6 +15,7 @@ class BookRecommender:
     def get_random_books(self):
         try:
             random_books = self.books.sample(n=3).to_dict(orient='records')
+            print(random_books)
             return JsonResponse({'Success': True,'Message': random_books})
         except FileNotFoundError:
             return JsonResponse({'Success': False, 'Message': 'File not found.'})
@@ -38,7 +39,9 @@ class BookRecommender:
             indices = self.model_knn.kneighbors(self.tfidf_matrix[book_index], n_neighbors=7)[1]
             recommended_books_indices = indices[0][4:]
             recommended_books = self.books.iloc[recommended_books_indices].iloc[:, :4]
-            return JsonResponse({'Success': True, 'Message': recommended_books.to_dict(orient='records')})
+            recommended_books['Image-URL-L'] = self.books.iloc[recommended_books_indices]['Image-URL-L']
+            recommended_books = recommended_books.to_dict(orient='records')
+            return JsonResponse({'Success': True, 'Message': recommended_books})
         except Exception as e:
             return JsonResponse({'Success': False, 'Message': str(e)})
 
