@@ -4,8 +4,6 @@
       <LoadingScreen />
     </template>
     <template v-else>
-      <div class="book-list">
-        <p> Book Set #{{ setNumber }}</p>
       <BookCard
         :books="currentBookSet.books.Message"
         :currentBookSet="currentBookSet"
@@ -13,7 +11,6 @@
         class="book-card"
       />
       <NavigationButtons @indexChanged ="changeLinkedListIndex"/>
-    </div>
     </template>
   </div>
 </template>
