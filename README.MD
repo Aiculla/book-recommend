@@ -74,7 +74,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Book Recommendation UI][product-screenshot]]
+![Book Recommendation UI][product-screenshot]
 
 
 This project is a web-based book recommendation system. The system uses a Machine Learning model trained on a books dataset to recommend books to users. The front-end is built using Vue.js and the backend is developed using Django.The book recommendation system provides recommendations based on the book's title, author, and publisher. The project uses a Machine Learning model trained on the TF-IDF Vectorizer representation of the book dataset. The Nearest Neighbors algorithm is used to find similar books based on cosine similarity.
