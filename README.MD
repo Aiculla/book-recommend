@@ -107,15 +107,13 @@ nextThree: This endpoint receives a book's ISBN and returns three books that are
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This guide will walk you through the process of setting up the Book-Recommend project on your local environment.
 
-### Prerequisites
+### Step 1: Navigate to the Project Directory
 
-This is an example of how to list things you need to use the software and how to install them.
+In your terminal or command line, navigate to the project's root directory using the following command:
 * npm
-  ```sh
-  npm install npm@latest -g
+  ```cd book-recommend
   ```
 
 ### Installation
