@@ -159,7 +159,7 @@ Distributed under the Apache 2.0 License.. See `LICENSE.txt` for more informatio
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name -  aicullahorvrath@gmail.com
 
 Project Link: [https://github.com/Aiculla/book-recommend](https://github.com/Aiculla/book-recommend)
 
