@@ -31,7 +31,6 @@
 <br />
 <div align="center">
   <a href="https://github.com/Aiculla/book-recommend">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Read Roulette</h3>
@@ -153,7 +152,7 @@ Distributed under the Apache 2.0 License.. See `LICENSE.txt` for more informatio
 <!-- CONTACT -->
 ## Contact
 
-Your Name -  aicullahorvrath@gmail.com
+Walid Muhammad - walidmuhammad1@gmail.com
 
 Project Link: [https://github.com/Aiculla/book-recommend](https://github.com/Aiculla/book-recommend)
 
