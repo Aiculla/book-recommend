@@ -37,7 +37,7 @@
 <h3 align="center">Read Roulette</h3>
 
   <p align="center">
-    project_description
+    This project utilizes a Machine Learning model trained on a comprehensive books dataset to deliver personalized book recommendations to users based off a random selection of three books. With the front-end developed using Vue.js and the back-end powered by Django, this system offers tailored recommendations for each user.
     <br />
     <br />
     <a href="https://github.com/Aiculla/book-recommend/issues">Report Bug</a>
@@ -88,12 +88,6 @@ coldStart: This endpoint returns a random set of three books from the dataset. T
 nextThree: This endpoint receives a book's ISBN and returns three books that are most similar to it.
 
 
-
-Django
-Sci-kit learn 
-Vue
-Pandas
-Axios
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
