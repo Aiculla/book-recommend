@@ -109,6 +109,19 @@ nextThree: This endpoint receives a book's ISBN and returns three books that are
 
 This guide will walk you through the process of setting up the Book-Recommend project on your local environment.
 
+Before starting, you will need:
+
+* Python version 3.10.6 or later
+* Node.js version 20.0.0 or later
+
+If you do not have the required versions, please update your Python and Node.js installations before proceeding. You can check your current versions by running these commands in your terminal or command line. 
+  ```sh
+  python --version
+  node --version
+  ```
+
+Once you have the necessary versions of Python and Node.js, you can proceed with the setup process as detailed in the following steps.
+
 ### Step 1: Navigate to the Project Directory
 
 In your terminal or command line, navigate to the project's root directory using the following command:
@@ -117,26 +130,79 @@ In your terminal or command line, navigate to the project's root directory using
   cd book-recommend
   ```
 
-### Installation
+### Step 2: Create a Python Virtual Environment
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/Aiculla/book-recommend.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+We will create a Python virtual environment to isolate the project dependencies. Use the following command:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  ```sh
+ python -m venv venv
+  ```
 
+### Step 3: Activate the Virtual Environment
 
+The command to activate the virtual environment differs based on your operating system.
 
+For Linux or MacOS, use:
+  ```sh
+source venv/bin/activate
+  ```
+If you're using Windows, use:
+  ```sh
+venv\Scripts\activate
+  ```
+  
+### Step 4: Install Python Packages
+
+Now, navigate to the mysite directory and install the required Python packages:
+
+For Linux or MacOS, use:
+  ```sh
+cd mysite
+pip install -r requirements.txt
+  ```
+The requirements.txt file should cover all necessary packages, including Django, Django CORS headers, Pandas, and Scikit-Learn. However, if you need to install these packages manually, you can do so with the following commands:
+  ```sh
+pip install django
+pip install django-cors-headers
+pip install pandas
+pip install scikit-learn
+  ```
+
+### Step 5: Run the Django Server
+
+With all packages installed, you're ready to run the Django server:
+
+For Linux or MacOS, use:
+  ```sh
+python manage.py runserver
+  ```
+
+### Step 6: Open a New Terminal and Set Up Vue.js
+
+Open a new terminal or command line instance. Now, navigate to the recommend-client directory within the book-recommend project:
+  ```sh
+cd book-recommend/recommend-client
+  ```
+
+For the front end of the application, we will use Vue.js. Make sure you have Node.js installed, then install Vue CLI globally:
+  ```sh
+npm install -g @vue/cli
+  ```
+### Step 7: Install Project Dependencies
+
+Now install the Node.js dependencies
+
+  ```sh
+npm install
+  ```
+
+### Step 8: Run the Vue.js Application
+
+Finally, you can run the Vue.js application with:
+
+  ```sh
+npm run serve
+  ```
 
 
 <!-- LICENSE -->
