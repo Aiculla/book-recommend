@@ -113,7 +113,8 @@ This guide will walk you through the process of setting up the Book-Recommend pr
 
 In your terminal or command line, navigate to the project's root directory using the following command:
 * npm
-  ```cd book-recommend
+  ```sh
+  npm install npm@latest -g
   ```
 
 ### Installation
