@@ -175,7 +175,7 @@ Project Link: [https://github.com/Aiculla/book-recommend](https://github.com/Aic
 [license-shield]: https://img.shields.io/github/license/Aiculla/book-recommend.svg?style=for-the-badge
 [license-url]: https://github.com/Aiculla/book-recommend/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: "www.linkedin.com/in/walidmuhammad1"
+[linkedin-url]: "https://www.linkedin.com/in/walidmuhammad1"
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
