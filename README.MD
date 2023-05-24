@@ -74,7 +74,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Book Recommendation UI][product-screenshot]]
 
 
 This project is a web-based book recommendation system. The system uses a Machine Learning model trained on a books dataset to recommend books to users. The front-end is built using Vue.js and the backend is developed using Django.The book recommendation system provides recommendations based on the book's title, author, and publisher. The project uses a Machine Learning model trained on the TF-IDF Vectorizer representation of the book dataset. The Nearest Neighbors algorithm is used to find similar books based on cosine similarity.
@@ -199,3 +199,4 @@ Project Link: [https://github.com/Aiculla/book-recommend](https://github.com/Aic
 [scikit-learn-url]: https://scikit-learn.org/stable/#
 [Pandas]: https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white
 [Pandas-url]: https://pandas.pydata.org/
+[product-screenshot]: https://github.com/Aiculla/book-recommend/blob/master/Book_Screenshot.png
