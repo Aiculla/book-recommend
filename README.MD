@@ -34,16 +34,12 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Read Roulette</h3>
 
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/Aiculla/book-recommend"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/Aiculla/book-recommend">View Demo</a>
-    ·
     <a href="https://github.com/Aiculla/book-recommend/issues">Report Bug</a>
     ·
     <a href="https://github.com/Aiculla/book-recommend/issues">Request Feature</a>
@@ -69,12 +65,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -85,7 +76,6 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `Aiculla`, `book-recommend`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 This project is a web-based book recommendation system. The system uses a Machine Learning model trained on a books dataset to recommend books to users. The front-end is built using Vue.js and the backend is developed using Django.The book recommendation system provides recommendations based on the book's title, author, and publisher. The project uses a Machine Learning model trained on the TF-IDF Vectorizer representation of the book dataset. The Nearest Neighbors algorithm is used to find similar books based on cosine similarity.
 
