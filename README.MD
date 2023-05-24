@@ -199,4 +199,4 @@ Project Link: [https://github.com/Aiculla/book-recommend](https://github.com/Aic
 [scikit-learn-url]: https://scikit-learn.org/stable/#
 [Pandas]: https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white
 [Pandas-url]: https://pandas.pydata.org/
-[product-screenshot]: https://github.com/Aiculla/book-recommend/blob/master/Book_Screenshot.png
+[product-screenshot]: https://github.com/Aiculla/book-recommend/blob/master/Books_Screenshot.png
